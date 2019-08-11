@@ -1,0 +1,158 @@
+.container .header {
+  background-image: url(../image/header.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 666px;
+  background-repeat: no-repeat;
+}
+.header {
+  padding: 4% 13% 0;
+}
+.logo {
+  height: fit-content;
+}
+.header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.about p {
+  font-size: 18px;
+  line-height: 165%;
+}
+.form {
+  width: 456px;
+  height: 457px;
+  background: #ffffff;
+}
+
+.content {
+  margin: 75px 0 50px;
+}
+
+.content > .row {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.content > .row:first-child {
+  margin-top: 75px;
+}
+
+.content .row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.content .row .number {
+  background: #2f80ed;
+  color: #ffffff;
+  border-radius: 50%;
+  height: 72px;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.content .row .name {
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+  margin: 25px 0 15px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f3f3f3;
+  height: fit-content;
+  padding: 80px 0;
+}
+
+.tips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.question {
+  font-family: Poppins;
+  text-align: center;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.container > div > h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  color: #000000;
+}
+.container > div > p {
+  font-weight: 500;
+  width: 600px;
+  font-size: 16px;
+  line-height: 165%;
+  color: #414141;
+  text-align: center;
+}
+.container > div > a,
+.container > div > a:hover,
+.container > div > a:active {
+  color: #2f80ed;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 165%;
+}
+.container > div > button {
+  border: none;
+  outline: none;
+  background: #2f80ed;
+  border-radius: 4px;
+  height: 60px;
+  width: 237px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer {
+  padding: 5% 13% 0;
+  height: 462px;
+  background: #242527;
+}
