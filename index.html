@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Flock</title>
+    <link rel="stylesheet" href="./style/swiper.min.css">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -28,19 +29,19 @@
                 <h2>Planning has never been easier</h2>
             </div>
             <div class="row">
-                <div class="col col-md-3 col-sm-8">
+                <div class="col-10 col-md-3 col-sm-8">
                     <div class="number">1</div>
                     <div class="name">You dream it</div>
                     <div class="more">Pool party of cabin in the wood? Apartment or luxury hotel? Share your thinking
                         online - fast & easy.</div>
                 </div>
-                <div class="col col-md-3 col-sm-8">
+                <div class="col-10 col-md-3 col-sm-8">
                     <div class="number">2</div>
                     <div class="name">We plan it</div>
                     <div class="more">Our group travel consultants will arrange and customize the perfect trip for you
                         and your crew.</div>
                 </div>
-                <div class="col col-md-3 col-sm-8">
+                <div class="col-10 col-md-3 col-sm-8">
                     <div class="number">3</div>
                     <div class="name">Let’s do it</div>
                     <div class="more">You like what you see, and you and your friends pack your bags and hit the road.
@@ -50,33 +51,83 @@
         </div>
         <div class="price col-12">
             <h2>All this for just $35/guy</h2>
-            <p>That’s right. For the price of a couple beers each, you can have your entire bachelor party planned for
+            <p class="col-10">That’s right. For the price of a couple beers each, you can have your entire bachelor party planned for
                 you. Get in touch with us today to learn more.</p>
             <button onclick="getStarted()">Get started</button>
         </div>
         <div class="tips col-12">
             <h2>Trip tips</h2>
-            <p> 
+            <p class="col-10">
                 Written by our Group Trip Pros to give you a taste of what a few of our favortie cities have to offer.
             </p>
-            <a href="#">See More</a>
-            <div class="row col-12">
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
+            <a class="col-10" href="#">See More</a>
+            <div class="row col">
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Austin</div>
+                    <img src="./image/Group24.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Miami</div>
+                    <img src="./image/Group 23.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Nashville</div>
+                    <img src="./image/Group 22.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Scottsdale</div>
+                    <img src="./image/Group 21.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="question col-12">
             <h2>Ready to learn more?</h2>
-            <p>Chat with one of our Group Trip Pros today.</p>
+            <p class="col-10">Chat with one of our Group Trip Pros today.</p>
             <button onclick="getInTouch()">Get in touch</button>
         </div>
         <div class="footer col-12">
             <img src="./image/FLOCK.png" alt="">
         </div>
     </div>
-    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="./script/swiper.min.js"></script>
+    <script src="./script/jquery-3.4.1.min.js"></script>
     <script src="./script/bootstrap.min.js"></script>
     <script src="./script/script.js"></script>
 </body>
