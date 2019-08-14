@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/swiper.min.css">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -15,13 +16,134 @@
             <div class="logo col-12">
                 <img src="./image/logo.png" alt="">
             </div>
-            <div class="row col-12">
+            <div class="row col-sm-12">
                 <div class="about col-6">
                     <h1>Bachelor parties just got better</h1>
                     <p> Skip the spreadsheets & browser tabs that come with planning the perfect bachelor party. We’re
                         your one-stop shop for planning the perfect trip for you and your boys.</p>
                 </div>
-                <div class="form col-6">col</div>
+                <div class="form">
+                    <form name="trip" method="POST" data-netlify="true">
+                        <div class="swiper-container form-swiper-container">
+                            <div class="swiper-wrapper form-swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h2>Type of Trip</h2>
+                                    <div class="select">
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Group 44.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="party" hidden id="">
+                                            Party
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Screenshot 2019-07-28 at 18.11.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="golf" hidden id="">
+                                            Golf
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Screenshot 2019-07-28 at 18.14.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="outdoors" hidden id="">
+                                            Outdoors
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/_.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="type-not" hidden id="">
+                                            I don't know
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="type-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Number of Guests</h2>
+                                    <div class="select">
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people1.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numGuest" value="1" hidden id="">
+                                            2-6
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people2.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numGuest" value="2" hidden id="">
+                                            6-12
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people3.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numGuest" value="3" hidden id="">
+                                            12+
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/_.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numGuest" value="guest-not" hidden id="">
+                                            I don't know
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="num-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Trip Dates</h2>
+                                    <div class="selects">
+                                        <div class="date form-select datepicker">
+                                            <input id="datepicker" name="date" oninput="oninput()" placeholder="Start Date" />
+                                            <img class="select-icon" src="./image/arrow-bottom.png" alt="">
+                                        </div>
+                                        <div class=" days">
+                                            <img class="select-icon-left" src="./image/day.png" alt="">
+                                            <img class="select-icon" src="./image/arrow-bottom.png" alt="">
+                                            <select id="days" name="day" value="Number of days"
+                                                class="custom-select">
+                                            </select>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="date-not" name="date-not" value="date-not">
+                                            <label for="date-not">I don’t know</label>
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="selects-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Let’s Chat</h2>
+                                    <div class="select inps">
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/name.png" alt="">
+                                            </div>
+                                            <input type="text" name="full-name" placeholder="Full name">
+                                        </div>
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/email.png" alt="">
+                                            </div>
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/phone.png" alt="">
+                                            </div>
+                                            <input type="text" name="phone" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" onclick="finish()">Next</button>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination form-swiper-pagination"></div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="content col-12">
@@ -51,7 +173,8 @@
         </div>
         <div class="price col-12">
             <h2>All this for just $35/guy</h2>
-            <p class="col-10">That’s right. For the price of a couple beers each, you can have your entire bachelor party planned for
+            <p class="col-10">That’s right. For the price of a couple beers each, you can have your entire bachelor
+                party planned for
                 you. Get in touch with us today to learn more.</p>
             <button onclick="getStarted()">Get started</button>
         </div>
@@ -85,8 +208,8 @@
             </div>
         </div>
         <div class="slide">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+            <div class="swiper-container slider-swiper-container">
+                <div class="swiper-wrapper slider-swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="icon"><span>“</span></div>
                         <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
@@ -112,9 +235,9 @@
                         <span>Dan from San Francisco</span>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <img class="swiper-button-prev slider-swiper-button-prev" src="./image/left.png" alt="">
+                <img class="swiper-button-next slider-swiper-button-next" src="./image/right.png" alt="">
+                <div class="swiper-pagination slider-swiper-pagination"></div>
             </div>
         </div>
         <div class="question col-12">
@@ -129,6 +252,7 @@
     <script src="./script/swiper.min.js"></script>
     <script src="./script/jquery-3.4.1.min.js"></script>
     <script src="./script/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <script src="./script/script.js"></script>
 </body>
 
