@@ -79,6 +79,10 @@ function finish() {
         `
 }
 
+document.querySelector('.finish',()=>{
+    finish()
+})
+
 
 function formSlider() {
     var types = document.querySelectorAll('input[name="type"]');
