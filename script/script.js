@@ -71,7 +71,6 @@ function finalFormPage() {
     });
 }
 function finish() {
-    console.log(document.querySelector('form'))
     document.querySelector('.form-swiper-container').classList.add('done')
     document.querySelector('.form-swiper-container').innerHTML = `
             <img src="./image/done.png">
