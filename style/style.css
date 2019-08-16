@@ -1,3 +1,7 @@
+*{
+  font-family: 'Poppins, sans-serif' !important;
+}
+
 .container .header {
   background-image: url(../image/header.png);
   background-size: cover;
