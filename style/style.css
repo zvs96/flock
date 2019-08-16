@@ -738,6 +738,7 @@ h2 {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     width: 78%;
+    min-height: 760px;
     justify-content: space-between;
   }
   .form {
