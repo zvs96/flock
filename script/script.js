@@ -97,7 +97,7 @@ function formSlider() {
             this.parentNode.parentNode.children[2].removeAttribute('disabled')
         })
     });
-    var guests = document.querySelectorAll('input[name="numGuest"]');
+    var guests = document.querySelectorAll('input[name="numberGuests"]');
     guests.forEach(guest => {
         guest.closest('div').addEventListener('click', function () {
             Array.from(this.parentNode.children).forEach(elm => {
