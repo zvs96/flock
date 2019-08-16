@@ -1,3 +1,4 @@
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 function getStarted() {
     console.log('start')
 }
@@ -151,8 +152,7 @@ function date() {
 date()
 datePicker()
 
-
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 if(isMobile){
-    document.querySelector('.container').classList.add('mobile')
+    document.querySelector('.container').classList.add('mobile');
+    swiperForm.update();	
 }
